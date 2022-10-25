@@ -1,0 +1,11 @@
+{
+  "name": "90dayptserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "author": "Rai Yash Pramod Anita",
+  "license": "ISC"
+}
