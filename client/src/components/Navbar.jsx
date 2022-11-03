@@ -9,8 +9,8 @@ export const Navbar = () => {
           <BigText>90DayPT</BigText>
       </Link>
       <div>
-          <Link to="/login" style={{ textDecoration: 'none', color: "whitesmoke", padding: "0.3125em" }}>Create Account</Link>
-          {/* <Link to="/signup" style={{ textDecoration: 'none', color: "whitesmoke", padding: "0.3125em" }}>Register</Link> */}
+          <Link to="/login" style={{ textDecoration: 'none', color: "whitesmoke", padding: "0.3125em" }}>login</Link>
+          <Link to="/register" style={{ textDecoration: 'none', color: "whitesmoke", padding: "0.3125em" }}>Register</Link>
       </div>
     </Nav>
   )

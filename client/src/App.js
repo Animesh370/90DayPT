@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import Login from './pages/Login'
+import Register from './pages/Register';
 
 function App() {
   // const navigate = useNavigate();
@@ -19,10 +20,10 @@ function App() {
             path='/login' 
             element={<Login />}
           />
-          {/* <Route 
-            path='/signup' 
-            element={<Signup />}
-          /> */}
+          <Route 
+            path='/register' 
+            element={<Register />}
+          />
         </Routes>
       </BrowserRouter>
     </>
