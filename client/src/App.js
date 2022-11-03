@@ -1,14 +1,31 @@
 import React from 'react';
-// import {BrowserRouter, Router, Route, useNavigate} from 'react-router-dom';
-// import Home from './components/Home'
-import Login from './components/Login'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
+import Login from './pages/Login'
+import Register from './pages/Register';
 
 function App() {
   // const navigate = useNavigate();
 
   return (
     <>
-      <Login />
+      <BrowserRouter>
+        {/* <LandingPage /> */}
+        <Routes>
+          <Route 
+            path='/' 
+            element={<LandingPage />}
+          />
+          <Route 
+            path='/login' 
+            element={<Login />}
+          />
+          <Route 
+            path='/register' 
+            element={<Register />}
+          />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
